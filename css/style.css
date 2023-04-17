@@ -22,13 +22,13 @@ header section{
     background-color: rgb(255, 111, 0);
 }
 
-.container{
+header .container{
     width: 80%;
     margin: 0 auto;
     height: 70px;
 }
 
-.row{
+header .row{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,4 +55,131 @@ a{
 
 .icon{
     height: 24px;
+}
+
+/* FINE HEADER */
+
+/* MAIN COSE */
+main{
+    margin-top: 100px;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+main .row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+main .row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.col_card{
+    min-width: 210px;
+    width: calc(100% / 3 - 10px);
+    margin: 5px;
+    position: relative;
+    float: left;
+}
+
+.card{
+    width: 100%;
+    position: relative;
+}
+
+.card_2{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.col_card:hover .card_2{
+    display: inline;
+}
+
+.like_box{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    background-color: white;
+    z-index: 1;
+    height: 64px;
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.icon_2{
+    align-self: center;
+    height: 32px;
+    width: 32px;
+}
+
+.labeles{
+    position: absolute;
+    top: -50%;
+    left: 0px;
+    display: inline-block;
+}
+
+label{
+    padding: 3px 5px;
+    color: white;
+    font-weight:600
+}
+
+.discount{
+    background-color: red;
+}
+
+.sostenibilita{
+    position: relative;
+    background-color: green;
+}
+
+.descrizione{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.marca{
+    font-size: 12px;
+}
+
+.nome{
+    font-weight: bold;
+}
+
+.prezzo>div{
+    font-size: 12px;
+    display: inline-block;
+}
+
+.prezzo_attuale{
+    font-weight: bold;
+    color: red;
+}
+
+.prezzo_precedente{
+    text-decoration: line-through;
+}
+
+.prezzo_attuale::after{
+    content: ' \20AC';
+}
+
+.prezzo_precedente::after{
+    content: ' \20AC';
 }
