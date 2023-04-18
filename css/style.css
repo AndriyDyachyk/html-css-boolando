@@ -8,11 +8,29 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+footer section{
+    background-color: rgb(19, 19, 19);
+    color: white;
+}
+
+.display_flex{
+    display: flex;
+}
+
+.space_between{
+    justify-content: space-between;
+}
+
+.align_items_center{
+    align-items: center;
+}
+
 /* header style */
 
 header{
     color: white;
-    position: absolute ;
+    position: fixed ;
+    z-index: 100;
     top: 0;
     left: 0;
     right: 0;
@@ -25,7 +43,7 @@ header section{
 header .container{
     width: 80%;
     margin: 0 auto;
-    height: 70px;
+    height: 50px;
 }
 
 header .row{
@@ -35,26 +53,26 @@ header .row{
     height: 100%;
 }
 
-.col.search{
-    width: 220px;
-    display: flex;
-    justify-content: space-between;
+.col.search a{
+    margin-right: 10px;
 }
 
 
 .logo{
-    height: 40px;
-    width: ;
+    height: 24px;
+    vertical-align: bottom;
+
 }
 
 a{
-    font-size: 20px;
+    font-size: 14px;
     text-decoration: none;
     color: inherit;
+    font-weight: bold;
 }
 
-.icon{
-    height: 24px;
+.menu_icon{
+    height: 12px;
 }
 
 /* FINE HEADER */
@@ -85,7 +103,7 @@ main .row::after {
 .col_card{
     min-width: 210px;
     width: calc(100% / 3 - 10px);
-    margin: 5px;
+    margin: 5px 5px 30px 5px;
     position: relative;
     float: left;
 }
@@ -113,22 +131,26 @@ main .row::after {
     right: 0px;
     background-color: white;
     z-index: 1;
-    height: 64px;
-    width: 64px;
+    min-height: 24px;
+    min-width: 24px;
+    height: 8%;
+    width: 12.5%;
+    max-height: 64px;
+    max-width: 64px;
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
-.icon_2{
+.heart{
     align-self: center;
-    height: 32px;
-    width: 32px;
+    height: 50%;
+    width: 50%;
 }
 
 .labeles{
     position: absolute;
-    top: -50%;
+    top: -115%;
     left: 0px;
     display: inline-block;
 }
@@ -136,7 +158,8 @@ main .row::after {
 label{
     padding: 3px 5px;
     color: white;
-    font-weight:600
+    font-weight:600;
+    font-size: 13px;
 }
 
 .discount{
@@ -182,4 +205,34 @@ label{
 
 .prezzo_precedente::after{
     content: ' \20AC';
+}
+/* FINE MAIN */
+
+/* FOOTER SYLE */
+
+footer a{
+    text-decoration: none;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+footer .container{
+    height: 100px;
+    margin-top: 20px;
+}
+
+.icon{
+    width: 24px;
+}
+
+.height_100{
+    height: 100%;
+}
+
+h3, h5{
+    margin-bottom: 10px;
+}
+
+.text_align_center{
+    text-align: center;
 }
